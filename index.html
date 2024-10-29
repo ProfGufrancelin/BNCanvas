@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Business Model Canvas Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="Styles.css" rel="stylesheet">
+  </head>
+
+<body>
+  <div class="header">
+    <h1>Business Model Canvas</h1>
+    <p>Desenvolva seu modelo de negócios de forma visual e estratégica</p>
+  </div>
+
+  <div class="container">
+    <div class="canvas">
+      <div class="section key-partners">
+        <h3>Parcerias Principais</h3>
+        <ul class="content-list" id="key-partners-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar parceiro...">
+          <button class="add-btn" onclick="addItem('key-partners-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section key-activities">
+        <h3>Atividades Principais</h3>
+        <ul class="content-list" id="key-activities-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar atividade...">
+          <button class="add-btn" onclick="addItem('key-activities-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section key-resources">
+        <h3>Recursos Principais</h3>
+        <ul class="content-list" id="key-resources-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar recurso...">
+          <button class="add-btn" onclick="addItem('key-resources-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section value-proposition">
+        <h3>Proposta de Valor</h3>
+        <ul class="content-list" id="value-proposition-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar proposta...">
+          <button class="add-btn" onclick="addItem('value-proposition-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section customer-relationships">
+        <h3>Relacionamento com Clientes</h3>
+        <ul class="content-list" id="customer-relationships-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar relacionamento...">
+          <button class="add-btn" onclick="addItem('customer-relationships-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section channels">
+        <h3>Canais</h3>
+        <ul class="content-list" id="channels-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar canal...">
+          <button class="add-btn" onclick="addItem('channels-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section customer-segments">
+        <h3>Segmentos de Clientes</h3>
+        <ul class="content-list" id="customer-segments-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar segmento...">
+          <button class="add-btn" onclick="addItem('customer-segments-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section cost-structure">
+        <h3>Estrutura de Custos</h3>
+        <ul class="content-list" id="cost-structure-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar custo...">
+          <button class="add-btn" onclick="addItem('cost-structure-list')">+</button>
+        </div>
+      </div>
+      
+      <div class="section revenue-streams">
+        <h3>Fontes de Receita</h3>
+        <ul class="content-list" id="revenue-streams-list"></ul>
+        <div class="add-item-container">
+          <input type="text" class="add-input" placeholder="Adicionar receita...">
+          <button class="add-btn" onclick="addItem('revenue-streams-list')">+</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="action-buttons">
+      <button class="action-btn save-btn" onclick="saveCanvas()">Salvar Canvas</button>
+      <button class="action-btn save-btn" onclick="saveAsPDF()">Exportar PDF</button>
+      <button class="action-btn clear-btn" onclick="clearCanvas()">Limpar Canvas</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
